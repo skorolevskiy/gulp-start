@@ -1,2 +1,2 @@
-# gulp-start
-Gulp starter for frontend
+# Gulp Start kit
+Gulp сборка для верстки
