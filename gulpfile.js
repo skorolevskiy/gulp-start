@@ -75,7 +75,13 @@ gulp.task('js', function () {
             }
           }
         ]
-      }
+      },
+      plugins: [
+        new webpack.ProvidePlugin({
+          $: 'jquery',
+          jQuery: 'jquery'
+        }),
+      ]
     }))
     .pipe(gulp.dest('./build/js/'))
     .pipe(rename({ suffix: '.min' }))
